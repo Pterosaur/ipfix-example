@@ -22,9 +22,7 @@ fn decode_field(field: FieldSpecifier) {
 }
 
 fn get_my_formatter() -> Formatter {
-    formatter! {
-        (0, 1) => ("octetDeltaCount", UnsignedInt) // unsigned64
-    }
+    Formatter::new()
     // get_default_formatter()
 }
 
